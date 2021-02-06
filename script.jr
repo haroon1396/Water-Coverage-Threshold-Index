@@ -1,0 +1,14 @@
+//  Dr. Hamid Rahimi //
+//  Specialist in Remote Sensing and Agricultural Crops Spectral Library   // 
+//  Email: hrahimi6767@gmail.com //
+//  Linkedin: https://www.linkedin.com/in/hamid-rahimi-gisrsclimatechange/  //
+var ndvi = (B04 - B08)/(B04 + B08);
+var ndwi = (B03 - B08)/(B03 + B08);
+var water = (ndwi > 0.17 ) / (ndvi < 0.2);
+if (water > 0.0) {
+return [0.2, 0.4, 0.7] 
+}
+
+else {
+return [0.85, 0.81, 0.84] 
+}
